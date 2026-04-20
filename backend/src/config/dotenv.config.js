@@ -10,6 +10,8 @@ const requiredEnv = [
   "FMSDEBT_SPREADSHEET_ID",
   "FMSCGWA_SPREADSHEET_ID",
   "SERVICE_SPREADSHEET_ID",
+  "PORT",
+  "FRONTEND_URL"
 ];
 
 requiredEnv.forEach((key) => {
@@ -25,7 +27,8 @@ const config = {
   FMSDEBT_SPREADSHEET_ID: process.env.FMSDEBT_SPREADSHEET_ID,
   FMSCGWA_SPREADSHEET_ID: process.env.FMSCGWA_SPREADSHEET_ID,
   SERVICE_SPREADSHEET_ID: process.env.SERVICE_SPREADSHEET_ID,
-
+  PORT: process.env.PORT,
+  FRONTEND_URL: process.env.FRONTEND_URL,
 };
 
 export default config;
